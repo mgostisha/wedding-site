@@ -167,7 +167,7 @@ html, body {
   height: 100vh;
   width: 100%;
   float: left;
-  color: navy;
+  color: black;
   background-color: whitesmoke;
 }
 
@@ -182,6 +182,27 @@ html, body {
   content: "";
   display: table;
   clear: both;
+}
+
+/* REGISTRY */
+.registry__header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  color: black;
+}
+
+.registry__image {
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/sky.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  float: right;
 }
 
 /* ADVENTURES */
@@ -223,14 +244,14 @@ html, body {
 }
 
 .adventures__favoritesPanel li {
-  font-family: 'Source Sans Pro', serif;
+  font-family: 'Unica One', serif;
   font-size: 1.25em;
   padding-bottom: .25em;
 }
 
 .adventers a:visited, .adventures a:hover, .adventures a {
   color: white;
-  font-family: 'Source Sans Pro', serif;
+  font-family: 'Unica One', serif;
 }
 
 @media (max-width: 800px) {
