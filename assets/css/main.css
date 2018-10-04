@@ -226,7 +226,6 @@ html, body {
   position: absolute;
   top: 30%;
   left: 20%;
-  /* transform: translateX(-50%); */
   color: white;
   font-size: 3em;
   text-align: center;
@@ -268,14 +267,55 @@ html, body {
   color: black;
 }
 
+.accomodations__container {
+  position: absolute;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  top: 5em;
+  left: 4em;
+}
+
 .accomodations__link {
-  background: url('../img/sky.jpg');
-  height: 100%;
-  flex-basis: 33.3333%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  border: 1px solid gray;
+  color: black;
+  font-size: 2.5em;
+  font-family: 'Unica One', sans-serif;
+  margin-top: .5em;
+  text-transform: uppercase;
+}
+
+.accomodations__help-text {
+  margin-top: .1em;
+  font-size: 1.3em;
+  color: black;
+  font-family: 'Unica One', sans-serif;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .accomodations {
+    background-position: bottom center;
+  }
+
+  .accomodations__container {
+    top: 5em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  
+  .accomodations__link {
+    color: black;
+    font-size: 2em;
+    margin-top: .5em;
+  }
+  
+  .accomodations__help-text {
+    font-size: .7em;
+    color: black;
+  }
 }
 
 /* REGISTRY */
@@ -370,13 +410,16 @@ html, body {
 
 .adventures__favoritesPanel li {
   font-family: 'Unica One', sans-serif;
-  font-size: 1.25em;
+  font-size: 1.4em;
+  text-transform: uppercase;
   padding-bottom: .25em;
 }
 
 .adventers a:visited, .adventures a:hover, .adventures a {
   color: white;
   font-family: 'Unica One', sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
 }
 
 @media screen and (max-width: 800px) {
